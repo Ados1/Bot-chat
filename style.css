@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.nav-main {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.btn-toggle {
+  width: 60px;
+  height: 100%;
+  background-color: #f98f39;
+  background-image: url("./image/icons8-hamburger-50.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+}
+.btn-toggle:hover {
+  opacity: 0.5;
+}
+
+.nav-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.nav-main ul li {
+  list-style: none;
+  line-height: 60px;
+}
+
+.nav-main ul li a {
+  display: block;
+  height: 100%;
+  padding: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  padding-top: 70px;
+}
