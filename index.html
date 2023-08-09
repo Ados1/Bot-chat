@@ -11,7 +11,16 @@
     <link rel="stylesheet" href="./resetstyle.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
+  <style>
+    df-messenger {
+      --df-messenger-bot-message: #878fac;
+      --df-messenger-button-titlebar-color: #df9b56;
+      --df-messenger-chat-background-color: #fafafa;
+      --df-messenger-font-color: white;
+      --df-messenger-send-icon: #878fac;
+      --df-messenger-user-message: #479b3d;
+    }
+  </style>
   <body>
     <nav class="nav-main">
       <div class="btn-toggle"></div>
@@ -24,13 +33,21 @@
       </ul>
     </nav>
     <aside>
-      <iframe
+      <!-- <iframe
         allow="microphone;"
         width="350"
         height="430"
         src="https://console.dialogflow.com/api-client/demo/embedded/0eae969a-8cd8-47d7-a99a-6b5db5c88ae0"
       >
-      </iframe>
+      </iframe> -->
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <df-messenger
+        chat-icon="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;6154GJfNpvL.png"
+        intent="WELCOME"
+        chat-title="Michael"
+        agent-id="0eae969a-8cd8-47d7-a99a-6b5db5c88ae0"
+        language-code="en"
+      ></df-messenger>
     </aside>
   </body>
 </html>
